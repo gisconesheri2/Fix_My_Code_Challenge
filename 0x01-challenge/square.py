@@ -1,12 +1,15 @@
 #!/usr/bin/python3
+"""square model class"""
+
 
 class square():
-    
+    """square model class"""
+
     width = 0
     height = 0
 
-    
     def __init__(self, *args, **kwargs):
+        """initialize the width and height class values"""
         for key, value in kwargs.items():
             setattr(self, key, value)
         self.height = self.width
@@ -16,10 +19,13 @@ class square():
         return self.width * self.width
 
     def PermiterOfMySquare(self):
+        """perimeter of the square"""
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
+        """pretty representaion of the class"""
         return "{}/{}".format(self.width, self.height)
+
 
 if __name__ == "__main__":
 
