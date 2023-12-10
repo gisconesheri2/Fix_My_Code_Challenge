@@ -12,7 +12,7 @@ class square():
         """initialize the width and height class values"""
         for key, value in kwargs.items():
             setattr(self, key, value)
-        self.height = self.width
+        # self.height = self.width
 
     def area_of_my_square(self):
         """ Area of the square """
@@ -20,11 +20,11 @@ class square():
 
     def PermiterOfMySquare(self):
         """perimeter of the square"""
-        return (self.width * 2) + (self.height * 2)
+        return (self.width * 2) + (self.width * 2)
 
     def __str__(self):
         """pretty representaion of the class"""
-        return "{}/{}".format(self.width, self.height)
+        return "{}/{}".format(self.width, self.width)
 
 
 if __name__ == "__main__":
